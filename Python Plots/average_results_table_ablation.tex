@@ -1,0 +1,55 @@
+\begin{table}[ht]
+\centering
+\caption{Average Precision, Recall, F$_1$‐score and mIoU across all three datasets.}
+\label{tab:avg_results}
+\begin{tabular}{ll l c c c c}
+\toprule
+Data class & Method & Classifier & Precision & Recall & F$_1$ & mIoU \\
+\midrule
+\multirow{9}{*}{One-pixel wide}
+& \multirow{3}{*}{Hessian} & ANN & 0.7242 & 0.1629 & 0.2651 & 0.5133\\
+&& & K-NN & 0.8446 & 0.0006 & 0.0012 & 0.4599\\
+&& & SVM & 0.5668 & 0.7874 & 0.6467 & 0.7066\\
+&& \multirow{3}{*}{MFAT} & ANN & 0.0422 & -- & -- & 0.4598\\
+&& & K-NN & 0.0528 & -- & -- & 0.4598\\
+&& & SVM & -- & -- & -- & 0.4598\\
+&& \multirow{3}{*}{Morpho} & ANN & 0.8332 & 0.3790 & 0.5093 & 0.6471\\
+&& & K-NN & 0.6235 & 0.0067 & 0.0133 & 0.4633\\
+&& & SVM & -- & -- & -- & 0.4598\\
+\midrule
+\multirow{9}{*}{With morphological dilation}
+& \multirow{3}{*}{Hessian} & ANN & 0.6536 & 0.7970 & 0.7089 & 0.7497\\
+&& & K-NN & 0.7328 & 0.3031 & 0.3974 & 0.5952\\
+&& & SVM & 0.7613 & 0.1132 & 0.1885 & 0.5151\\
+&& \multirow{3}{*}{MFAT} & ANN & 0.7787 & 0.5694 & 0.6569 & 0.7202\\
+&& & K-NN & 0.7720 & 0.6613 & 0.7112 & 0.7547\\
+&& & SVM & 0.7203 & 0.0932 & 0.1488 & 0.5056\\
+&& \multirow{3}{*}{Morpho} & ANN & 0.8521 & 0.6400 & 0.7272 & 0.7656\\
+&& & K-NN & 0.8740 & 0.6605 & 0.7488 & 0.7806\\
+&& & SVM & 0.8807 & 0.3192 & 0.4586 & 0.6213\\
+\midrule
+\multirow{9}{*}{With geometric transformation}
+& \multirow{3}{*}{Hessian} & ANN & 0.6698 & 0.7406 & 0.6932 & 0.7393\\
+&& & K-NN & 0.6586 & 0.4883 & 0.5299 & 0.6539\\
+&& & SVM & 0.5791 & 0.7492 & 0.6383 & 0.7018\\
+&& \multirow{3}{*}{MFAT} & ANN & 0.7667 & 0.6617 & 0.7102 & 0.7543\\
+&& & K-NN & 0.7595 & 0.6837 & 0.7193 & 0.7594\\
+&& & SVM & 0.7578 & 0.6805 & 0.7166 & 0.7575\\
+&& \multirow{3}{*}{Morpho} & ANN & 0.8500 & 0.6695 & 0.7444 & 0.7771\\
+&& & K-NN & 0.8539 & 0.6708 & 0.7467 & 0.7788\\
+&& & SVM & 0.6712 & 0.6739 & 0.6587 & 0.7182\\
+\midrule
+\multirow{9}{*}{With elastic deformation}
+& \multirow{3}{*}{Hessian} & ANN & 0.6765 & 0.6868 & 0.6758 & 0.7295\\
+&& & K-NN & 0.6351 & 0.5485 & 0.5486 & 0.6621\\
+&& & SVM & 0.5614 & 0.6157 & 0.5605 & 0.6604\\
+&& \multirow{3}{*}{MFAT} & ANN & 0.7686 & 0.6700 & 0.7157 & 0.7577\\
+&& & K-NN & 0.7582 & 0.6837 & 0.7189 & 0.7591\\
+&& & SVM & 0.7481 & 0.6862 & 0.7155 & 0.7565\\
+&& \multirow{3}{*}{Morpho} & ANN & 0.8570 & 0.6576 & 0.7403 & 0.7745\\
+&& & K-NN & 0.8583 & 0.6722 & 0.7495 & 0.7808\\
+&& & SVM & 0.6035 & 0.6783 & 0.6229 & 0.6944\\
+\midrule
+\bottomrule
+\end{tabular}
+\end{table}

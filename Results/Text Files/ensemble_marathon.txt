@@ -1,0 +1,1 @@
+Iterationn: 1 | The mean difference: 8.167724 

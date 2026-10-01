@@ -1,0 +1,143 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="Colorful-Flowchart" id="colorful-crack-detection">
+    <mxGraphModel dx="1977" dy="1352" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1000" background="#F8F9FA" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="synth-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE5E5;strokeColor=#FF6B6B;strokeWidth=3;arcSize=5;" parent="1" vertex="1">
+          <mxGeometry x="46" y="80" width="350" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="synth-title" value="Synthetic Crack Generation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF6B6B;strokeColor=#C44569;strokeWidth=2;fontColor=#FFFFFF;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="66" y="890" width="310" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="synth-1" value="Random noise image&#xa;(uniform / Gaussian)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0F0;strokeColor=#FF6B6B;strokeWidth=2;fontColor=#C44569;fontSize=14;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="96" y="100" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="synth-2" value="Dijkstra&#39;s shortest path for the graph structure (Single edge, RRT, RRT*, Voronoi)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0F0;strokeColor=#FF6B6B;strokeWidth=2;fontColor=#C44569;fontSize=14;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="96" y="283" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="synth-3" value="Synthetic crack strand&#xa;(1-pixel skeleton)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0F0;strokeColor=#FF6B6B;strokeWidth=2;fontColor=#C44569;fontSize=14;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="96" y="396" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="synth-4" value="Morphological dilation&#xa;(variable width)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0F0;strokeColor=#FF6B6B;strokeWidth=2;fontColor=#C44569;fontSize=14;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="96" y="486" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="synth-5" value="Geometric transformations&#xa;Affine / Projective /&#xa;Piecewise Linear /&#xa;Polynomial d = 2-4 /&#xa;Local Weighted Mean" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0F0;strokeColor=#FF6B6B;strokeWidth=2;fontColor=#C44569;fontSize=14;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="96" y="576" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="synth-6" value="Elastic deformation&#xa;(Random displacement&#xa;+ Gaussian smoothing)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0F0;strokeColor=#FF6B6B;strokeWidth=2;fontColor=#C44569;fontSize=14;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="96" y="706" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="synth-7" value="Synthetic crack images" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0F0;strokeColor=#FF6B6B;strokeWidth=2;fontColor=#C44569;fontSize=14;fontStyle=1;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="96" y="816" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="train-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#4ECDC4;strokeWidth=3;arcSize=5;" parent="1" vertex="1">
+          <mxGeometry x="425" y="340" width="350" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="train-title" value="Training &amp; Classification" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4ECDC4;strokeColor=#1A535C;strokeWidth=2;fontColor=#FFFFFF;fontSize=20;fontStyle=1;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="445" y="800" width="310" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="train-1" value="Non-crack patches&#xa;(from real images)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0F8FF;strokeColor=#4ECDC4;strokeWidth=2;fontColor=#1A535C;fontSize=14;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="475" y="361" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="train-2" value="Labelled training set&#xa;(crack and non-crack)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0F8FF;strokeColor=#4ECDC4;strokeWidth=2;fontColor=#1A535C;fontSize=14;fontStyle=1;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="475" y="452" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="train-3" value="Feature extraction&#xa;5 geometric features" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0F8FF;strokeColor=#4ECDC4;strokeWidth=2;fontColor=#1A535C;fontSize=14;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="475" y="542" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="train-4" value="Train classifiers&#xa;ANN | k-NN | SVM" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0F8FF;strokeColor=#4ECDC4;strokeWidth=2;fontColor=#1A535C;fontSize=14;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="475" y="632" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="seg-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4E6;strokeColor=#F7B731;strokeWidth=3;arcSize=5;" parent="1" vertex="1">
+          <mxGeometry x="800" y="81" width="350" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="seg-title" value="Crack Segmentation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7B731;strokeColor=#E67E22;strokeWidth=2;fontColor=#FFFFFF;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="820" y="890" width="310" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="seg-1" value="Real concrete images" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9F0;strokeColor=#F7B731;strokeWidth=2;fontColor=#E67E22;fontSize=14;fontStyle=1;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="850" y="101" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="seg-2" value="Crack detection filters&#xa;MFAT | Vesselness |&#xa;Morphological" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9F0;strokeColor=#F7B731;strokeWidth=2;fontColor=#E67E22;fontSize=14;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="850" y="197" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="seg-3" value="Binarization&#xa;(Otsu threshold)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9F0;strokeColor=#F7B731;strokeWidth=2;fontColor=#E67E22;fontSize=14;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="850" y="318" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="seg-4" value="Connected components" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9F0;strokeColor=#F7B731;strokeWidth=2;fontColor=#E67E22;fontSize=14;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="850" y="418" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="seg-5" value="Classifier prediction&#xa;(crack / non-crack)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9F0;strokeColor=#F7B731;strokeWidth=2;fontColor=#E67E22;fontSize=14;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="850" y="520" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="seg-6" value="Final crack map" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9F0;strokeColor=#F7B731;strokeWidth=2;fontColor=#E67E22;fontSize=14;fontStyle=1;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="850" y="620" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=classic;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="synth-1" target="lImXsN_eq3npxDR4Vc4--3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=classic;endFill=1;" parent="1" source="synth-2" target="synth-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=classic;endFill=1;" parent="1" source="synth-3" target="synth-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=classic;endFill=1;" parent="1" source="synth-4" target="synth-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=classic;endFill=1;" parent="1" source="synth-5" target="synth-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=classic;endFill=1;" parent="1" source="synth-6" target="synth-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=classic;endFill=1;entryX=0.001;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="synth-7" target="train-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="846" />
+              <mxPoint x="410" y="490" />
+            </Array>
+            <mxPoint x="346" y="755.0666666666666" as="sourcePoint" />
+            <mxPoint x="600.0666666666666" y="457" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=classic;endFill=1;" parent="1" source="train-1" target="train-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=classic;endFill=1;" parent="1" source="train-2" target="train-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=classic;endFill=1;" parent="1" source="train-3" target="train-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=classic;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=0;" parent="1" source="train-4" target="seg-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=classic;endFill=1;" parent="1" source="seg-1" target="seg-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=classic;endFill=1;" parent="1" source="seg-2" target="seg-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=classic;endFill=1;" parent="1" source="seg-3" target="seg-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=classic;endFill=1;" parent="1" source="seg-4" target="seg-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=classic;endFill=1;" parent="1" source="seg-5" target="seg-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lImXsN_eq3npxDR4Vc4--3" value="Energy of pixels, adjacency matrix and weights computation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0F0;strokeColor=#FF6B6B;strokeWidth=2;fontColor=#C44569;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="96" y="190" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lImXsN_eq3npxDR4Vc4--4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=classic;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="lImXsN_eq3npxDR4Vc4--3" target="synth-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="221" y="260" as="sourcePoint" />
+            <mxPoint x="210" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
